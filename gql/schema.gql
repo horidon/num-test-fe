@@ -1,0 +1,10 @@
+type Query {
+    words(num: String!): [Word]
+    matches(num: String!): Match
+},
+type Word {
+    word: String
+},
+type Match {
+    match: [String]
+}
